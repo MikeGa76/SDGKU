@@ -1,0 +1,112 @@
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header{
+  font-size: 24px;
+  text-align: center;
+  color:white;
+}
+body{
+  background-image: url(../img/lionr.jpg);
+  background-color: gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p{
+  color: cyan;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-indent: 1em;
+  text-align: center;
+}
+h1{
+  color: blueviolet;
+}
+img{
+  border-radius: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: black;
+  border: solid purple;
+  padding: 5px;
+}
+p2 {
+  color:white;
+}
+.src{
+  color: green;
+}
+.textcap{
+  color:blue;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline overline double purple;
+}
+.text{
+  color: cyan;
+  text-align: center;
+}
+.copyright{
+  background: rgb(61, 30, 91);
+  background: rgba(61, 30, 91, 0.5);
+  font-size: 14px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  pointer-events: none;
+}
+hr{
+ padding: 10px;
+ background-color: black;
+ border-color: cyan;
+ opacity: .7;
+ border-style: outset;
+}
+a {
+  text-decoration: none;
+}
+#navList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+#navList ul li { display: inline; }
+#navList ul li a {
+  text-decoration: none;
+  padding: .2em 1em;
+  color: white;
+  background-color: purple;
+}
+#navList ul li a:hover {
+  color: white;
+  background-color: lightblue;
+}
+#olist {
+  color: purple;
+  float: right;
+}
+#olist ol {
+  word-spacing: 20px;
+}
+#olist li {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  border: solid purple;
+  display: inline-block;
+  list-style-type: none;
+}
+.container {
+  background-color: black;
+  border: solid purple;
+  display: inline-block;
+  padding: 5px;
+}
+.liststyle {
+  list-style-type: circle;
+  color:blue;
+}
