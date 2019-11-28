@@ -1,0 +1,21 @@
+table, tr {
+  border: 1px solid blue;
+  width: 50%;
+}
+td {
+   border-bottom: 1px solid black;
+   width: 100px;
+   height: 50px;
+   padding: 5px;
+   text-align: center;
+}
+/* .tr tr:hover {
+  background: lightgrey;
+} */
+img {
+  width: 100px;
+  height: 100px;
+}
+table tr td{
+  color: blue !important;
+}
