@@ -1,11 +1,12 @@
-// alert("Hello world");
+/*
+alert("Hello world");
 console.log("Hello from the console");
-// prompt("Name:");
-// var x
-// x = "mike"
-// console.log(x)
-// x = 30
-// console.log(x)
+prompt("Name:");
+var x
+x = "mike"
+console.log(x)
+x = 30
+console.log(x)
 const num1 = 20
 const num2 = 104
 var sum = num1 + num2
@@ -27,7 +28,6 @@ if (n === false) {
 } else {
   console.log("yes")
 }
-*/
 
 if (num1 > num2) {
   console.log("The largest ")
@@ -39,8 +39,18 @@ else {
   console.log("large num2")
 }
 
-let students = ['angel', 'Josh', 'victor']
+let students = ['angel', 'Josh', 'victor'];
 console.table(students)
-for (var j = 0; j < 4; j++) {
-  console.log(students[j])
+*/
+
+var values = [420, 560, 210, 854]
+var valAfterCom = values.join(', ')
+alert("All values contained in array: " + valAfterCom)
+function avgSum(arr) {
+  let sum = 0
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length
 }
+alert("The average: " + avgSum(values))
