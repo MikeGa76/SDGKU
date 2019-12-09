@@ -1,0 +1,72 @@
+img {
+  width: 150px;
+}
+.wrap {
+  display:flex;
+  justify-content: center;
+}
+.player {
+  background: gray;
+  height: 400px;
+  width: 300px;
+  flex-basis: (40% - 10px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+}
+footer {
+  height: 40px;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 3px;
+}
+header {
+  background: burlywood;
+  color: black;
+  height: 100px;
+  text-align: center;
+}
+main {
+  height: 800px;
+}
+.btn {
+  background: orangered;
+  color: white;
+  width: 100px;
+  height: 30px;
+}
+#console {
+  background: gray;
+  color: white;
+  width: 600px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: black solid;
+  border-radius: 10px;
+}
+#c1 {
+  background: gray;
+  color: white;
+  width: auto;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  border: black solid;
+  border-radius: 10px;
+}
+#c2 {
+  background: gray;
+  color: white;
+  width: auto;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  border: black solid;
+  border-radius: 10px;
+}
