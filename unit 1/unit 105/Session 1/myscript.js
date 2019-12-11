@@ -62,8 +62,12 @@ salon.pets.push(pet1)
 salon.pets.push(pet2)
 console.table(salon.pets)
 salon.count()
-for (vare i = 0; i < salon.pets.length; i++) {
-  console.log(salon.pets[i].name)
-  console.log(salon.pets[i].age)
-  console.log(salon.pets[i].gender)
+var text = ' ';
+for (var i = 0; i < salon.pets.length; i++) {
+  // console.log(salon.pets[i].name)
+  // console.log(salon.pets[i].age)
+  // console.log(salon.pets[i].gender)
+  text += ` <p> Name: ${salon.pets[i].name}<br> Age: ${salon.pets[i].age}<br> Gender: ${salon.pets[i].gender}</p>`;
 }
+document.getElementById("cont").innerHTML = `${text}`;
+console.log(text)
