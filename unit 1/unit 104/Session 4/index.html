@@ -15,7 +15,7 @@
           <img src="img/c1.png" alt="Yoshi">
           <br>
           <!-- attack button != working -->
-          <button class="btn" type="button" onclick="character1.attack(character2);" name="Attack">Attack</button>
+          <button class="btn" type="button" onclick="character1.attack(character2, selectItem());" name="Attack">Attack</button>
           <div id="c1">
 
           </div>
@@ -25,19 +25,17 @@
           <div class="player" id="opponent">
             <img src="img/c2.png" alt="Toad">
             <br>
-            <button class="btn" type="button" onclick="character2.attack(character1);" name="Attack">Attack</button>
+            <button class="btn" type="button" onclick="character2.attack(character1, selectItem());" name="Attack">Attack</button>
             <div id="c2">
             </div>
           </div>
         </div>
-
       </div>
 
       <div id="console">
-
       </div>
 
-      <button type="button"onclick="reset();" name="button">Reset</button>
+      <button type="button"onclick="reset(character1, character2);" name="button">Reset</button>
     </main>
     <footer>
       <p>Mike G &copy; reserved</p>
