@@ -11,7 +11,10 @@ const salon = {
     open: "9:00 am",
     close: "5:00 pm"
   },
-  pets: []
+  pets: [],
+  count: function() {
+    alert("We have: " + salon.pets.length + " pets")
+  }
 }
 
 //object destructuring
@@ -58,3 +61,9 @@ console.log(salon)
 salon.pets.push(pet1)
 salon.pets.push(pet2)
 console.table(salon.pets)
+salon.count()
+for (vare i = 0; i < salon.pets.length; i++) {
+  console.log(salon.pets[i].name)
+  console.log(salon.pets[i].age)
+  console.log(salon.pets[i].gender)
+}
