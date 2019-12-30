@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <header class="header-in">
+      <h1>The Fashion Pet</h1>
+      <div class="menu">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="register.html">register</a>
+        </nav>
+
+      </div>
+      <div class="row align-items-start">
+        <div id="col1" class="col">
+        </div>
+        <div id="col2" class="col">
+        </div>
+        <div id="col3" class="col">
+        </div>
+      </div>
+    </header>
+    <div class="info">
+
+    </div>
+
+    <main>
+      <hr>
+      <div class="center">
+
+      <form class="form-group" action="#">
+        <div class="form-row">
+          <p>Name: <input type="text" id="petName"> </p>
+          <p>Age: <input type="text" id="petAge"></p>
+        </div>
+        <div class="form-row">
+          <p>Breed: <input type="text" id="petBreed"></p>
+          <p>Gender: <input type="text" id="petGender"></p>
+        </div>
+        <div class="">
+        <p>Service: <select class="form-control"type="text" id="petService">
+          <option value="" disabled selected>--- Select an option ---</option>
+          <option value="Complete Shower">Shower</option>
+          <option value="Nails Cut">Nails Cut</option>
+          <option value="Full Service">Full Service</option>
+        </select></p>
+      </div>
+      <div class="form-row">
+        <p>Owner's Name: <input type="text" id="ownersName"></p>
+        <p>Contact phone: <input type="text" id="contactPhone"></p>
+        <input type="submit" id="btnRegister" class="btn btn-success"value="Register" onclick="register()">
+      </div>
+        <div class="search form-group has-success has-feedback">
+          <input type="search" name="search" id="petSearch">
+          <button class="btn btn-primary"onclick="search()">search</button>
+          <div class="result">
+
+          </div>
+        </div>
+        <div class="pets">
+          <table>
+            <thead>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Breed</th>
+              <th>Gender</th>
+              <th>Service</th>
+              <th>Owner Name</th>
+              <th>Contact Phone</th>
+            </thead>
+            <tbody id="rowPet">
+
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </div>
+
+    </main>
+
+    <footer class="footer-in">
+      <div class="info">
+
+      </div>
+
+    </footer>
+
+    <script src="myscript.js">
+    </script>
+  </body>
+</html>
