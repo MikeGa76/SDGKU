@@ -1,5 +1,9 @@
 h1 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: gray;
+  margin-top: 0px;
 }
 .row {
   margin-bottom: 25px;
@@ -7,4 +11,21 @@ h1 {
 }
 .col-4{
   text-align: right;
+}
+.container{
+    border:1px solid rgb(129, 156, 187);
+    padding: 0;
+}
+
+.form{
+    padding: 10px 20px;
+}
+.row{
+  margin-bottom: 25px;
+}
+.col-4{
+  text-align: right;
+}
+.hidden{
+  display: none;
 }
