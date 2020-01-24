@@ -102,7 +102,7 @@ function searchByCategory(catName) {
   // travel array and show only items that contains the text
   for (var i = 0; i < items.length; i++) {
     var item = items[i]
-    if (item.category.toLowerCase().includes(catName)) {
+    if (item.category.toLowerCase().includes(catName.toLowerCase)) {
       drawItem()
     }
   }
