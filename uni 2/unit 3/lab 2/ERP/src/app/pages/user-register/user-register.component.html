@@ -1,0 +1,81 @@
+<p>user-register works!</p>
+<!-- 
+    email
+    username
+    password
+    retype pass
+
+    first name
+    last name
+
+    button for save
+ -->
+ <div class="row">
+    <div class="form col col-8">
+
+        <div class="form-group row">
+            <label class="col-4 form-group-label"> Email:</label>
+            <div class="col-8">
+                <input class="form-control" type="email" [(ngModel)]="model.email">
+            </div>
+        </div>     
+        
+        <div class="form-group row">
+            <label class="col-4 form-group-label">Password:</label>
+            <div class="col-8">
+                <input class="form-control" type="password" [(ngModel)]="model.password">
+                <div *ngIf="this.retypePassword && !isPasswordStrong()" class="error error-alert">
+                    Your password is too weak. Must have ...
+                </div>
+            </div>
+        </div>    
+        
+                
+        <div class="form-group row">
+            <label class="col-4 form-group-label">retype password: </label>
+            <div class="col-8">
+                <input class="form-control" type="password" [(ngModel)]="retypePassword">
+                <div ngIf="model.password && retypePassword && model.password != retypePassword" class="alert alert-danger">
+                    Passwords do not match!!
+                </div>
+            </div>
+        </div>   
+
+                
+        <div class="form-group row">
+            <label class="col-4 form-group-label">User Name: </label>
+            <div class="col-8">
+                <input class="form-control" type="text" [(ngModel)]="model.userName">
+            </div>
+        </div>   
+
+                
+        <div class="form-group row">
+            <label class="col-4 form-group-label">First Name: </label>
+            <div class="col-8">
+                <input class="form-control" type="text" [(ngModel)]="model.firstName">
+            </div>
+        </div>   
+
+                
+        <div class="form-group row">
+            <label class="col-4 form-group-label">Last Name: </label>
+            <div class="col-8">
+                <input class="form-control" type="text" [(ngModel)]="model.lastName">
+            </div>
+        </div>   
+
+        <div class="form-group row">
+            <label class="col-4 form-group-label"> </label>
+            <div class="col-8">
+                <button (click)="save()"  [disabled]="isDataCorrect()" class="btn btn-info" >Register User</button>
+                <span *ngIf="savedAlertVisible" class="alert alert-info">
+                    The user has been registered!
+                </span>
+            </div>
+        </div>        
+
+
+    </div>
+    
+ </div>

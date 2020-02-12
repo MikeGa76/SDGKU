@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <h3>{{name}}</h3>
+  <!-- <h3>{{name}}</h3>
   <div>
     {{name}} - {{title}}
   </div>
   {{userName}}
   <hr>
-  
-  <input type="text" [(ngModel)]="userName">
+   -->
+  <app-nav-bar></app-nav-bar>
+   <!-- <input type="text" [(ngModel)]="userName">
   
   <button (click)=calculate()>
     calculate
   </button>
 
   <button (click)=clear()>clear form</button>
-  <hr>
-  <app-temp-calculator> </app-temp-calculator>
-</body>
-</html>
+  <hr> -->
+
+  <router-outlet></router-outlet>
+ 
+  <div>
+    This is the footer
+  </div>
