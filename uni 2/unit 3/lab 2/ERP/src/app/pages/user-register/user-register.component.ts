@@ -23,7 +23,7 @@ export class UserRegisterComponent implements OnInit {
   return strongRegex.test(this.retypePassword)
   }
 
-  isDatacorrect(){
+  isDataCorrect(){
   // validate for password strength
   if(!this.isPasswordStrong()){
     return true // button will be disabled

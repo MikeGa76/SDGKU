@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
 
   validateLogin(){
     // travel the array 
+    
     // compare user and password with each ele in the array
     // if find a match, login correct
     for(var i =0; this.registeredUsers.length; i++) {
