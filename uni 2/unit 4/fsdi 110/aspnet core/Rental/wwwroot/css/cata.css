@@ -1,0 +1,21 @@
+.item{
+    border: 1px solid gray;
+    width: 809px;
+    height: 580px;
+    /* display: inline-block; */
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    padding: 7px;
+    background-color: whitesmoke;
+}
+
+.item img {
+    width: 800px;
+    height: 470px;
+}
+
+body{
+
+    background-image: url(https://www.clearstar.net/wp-content/uploads/2019/01/slider4.jpg);
+    background-repeat: no-repeat;
+}
